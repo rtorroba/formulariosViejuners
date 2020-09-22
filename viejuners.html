@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario Club Viejuner</title>
+  </head>
+  <style>
+    form {
+      width: 60%;
+      margin-left: 15%;
+      margin-bottom: 15%;
+      background-color: darkkhaki;
+    }
+    html {
+      background-color: darkgoldenrod;
+    }
+  </style>
+  <body>
+    <a
+      href="https://github.com/TheBridge-FullStackDeveloper/html-pp-formularios"
+      target="blank"
+    >
+      Enlace a ejercicio "Formulario Viejuners"</a
+    >
+
+    <hr />
+
+    <form action="#" method="POST">
+      <h3>El club viejuner</h3>
+      <br />
+      <fieldset>
+        <legend>Tú:</legend>
+      </fieldset>
+      <br />
+      <ul>
+        <li>
+          <label for="nombre">Nombre:</label>
+          <input
+            type="text"
+            id="nombre"
+            name="nombre"
+            placeholder="Escriba aquí su nombre"
+            autofocus
+          />
+        </li>
+
+        <br /><br />
+
+        <li>
+          <label for="apellidos">Apellidos:</label>
+          <input
+            type="text"
+            id="apellidos"
+            name="apellidos"
+            placeholder="Escriba aquí sus apellidos"
+          />
+        </li>
+
+        <br /><br />
+
+        <li>
+          <label for="edad">Edad:</label>
+          <input
+            type="number"
+            id="edad"
+            name="edad"
+            placeholder="Seleccione su edad"
+          />
+        </li>
+        <!--size no funciona aquí para reducir el tamaño de la casilla-->
+
+        <br /><br />
+
+        <li>
+          <label>Sexo:</label>
+          <input type="radio" name="sexo" id="mujer" value="Mujer" /> Mujer
+          <input type="radio" name="sexo" id="hombre" value="hombre" /> Hombre
+        </li>
+
+        <br /><br />
+
+        <li>
+          <label for="viejuner">Me siento viejuner:</label>
+          <input type="checkbox" value="yes" id="viejuner" /> Sí
+          <input type="checkbox" value="no" id="viejuner" />No
+        </li>
+
+        <br /><br />
+
+        <li>
+          <label for="about">Escribe algo sobre ti:</label>
+          <textarea
+            name="about"
+            id="about"
+            centered
+            placeholder="Escriba aquí"
+            cols="30"
+            rows="10"
+            tabindex="1"
+          >
+          </textarea>
+        </li>
+      </ul>
+      <br />
+
+      <fieldset>
+        <legend>Tus circustancias:</legend>
+      </fieldset>
+      <br />
+
+      <ul>
+        <li>
+          <label for="email">Correo electrónico:</label>
+          <input
+            type="email"
+            id="email"
+            name="correo"
+            placeholder="Escriba aquí su correo electrónico"
+            size="30"
+          />
+        </li>
+
+        <br /><br />
+
+        <li>
+          <label for="telefono">Teléfono:</label>
+          <input
+            id="telefono"
+            name="telefono"
+            type="tel"
+            placeholder="Escriba aquí su número de teléfono"
+            size="29"
+          />
+        </li>
+      </ul>
+
+      <br /><br />
+
+      <input type="reset" /> Restablecer valores
+
+      <br /><br />
+
+      <input type="submit" value="Enviar" /> Enviar formulario
+    </form>
+  </body>
+</html>

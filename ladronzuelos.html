@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario Los ladronzuelos de bicicletas</title>
+  </head>
+  <style>
+    form {
+      width: 60%;
+      margin-left: 15%;
+      margin-bottom: 15%;
+      background-color: darkkhaki;
+    }
+    html {
+      background-color: darkgoldenrod;
+    }
+  </style>
+  <body>
+    <a
+      href="https://github.com/TheBridge-FullStackDeveloper/html-pp-formularios"
+      target="blank"
+    >
+      Enlace a ejercicio "Formulario viejuners"</a
+    >
+    <hr />
+
+    <form action="#" method="POST">
+      <h3>Los ladronzuelos de bicicletas</h3>
+
+      <label for="fecha">Día:</label>
+      <input type="date" id="fecha" name="fecha" />
+
+      <br /><br />
+
+      <label for="hora">Hora:</label>
+      <input type="time" id="hora" name="hora" />
+
+      <br /><br />
+
+      <label for="color">Color de la bicicleta:</label>
+      <input type="color" id="color" name="color" />
+
+      <br /><br />
+
+      <label for="precio">Rango de precio:</label>
+      <input
+        tabindex="1"
+        type="range"
+        id="precio"
+        name="precio"
+        list="precio"
+      />
+
+      <datalist id="precio">
+        <option value="0"></option>
+        <option value="100"></option>
+        <option value="200"></option>
+        <option value="300"></option>
+        <option value="400"></option>
+        <option value="500"></option>
+        <option value="600"></option>
+        <option value="700"></option>
+        <option value="800"></option>
+        <option value="900"></option>
+        <option value="1000"></option>
+      </datalist>
+
+      <br /><br />
+
+      <label>Tipo de bicicleta:</label>
+      <select>
+        <option disabled value="Seleccione uno">Seleccione uno</option>
+
+        <optgroup label="Paseo">
+          <option value="Señorial">Señorial</option>
+          <option value="Anti-plebeyos">Anti-plebeyos</option>
+          <option value="PorEncimaDelHombro">PorEncimaDelHombro</option>
+        </optgroup>
+
+        <optgroup label="Montaña">
+          <option value="Gamusinos">Gamusinos</option>
+          <option value="Hueleflores premium">Hueleflores premium</option>
+          <option value="Fango lover">Fango lover</option>
+        </optgroup>
+
+        <optgroup label="Carreras">
+          <option value="Metroymedio">Metroymedio</option>
+          <option value="3 de la tarde. Fluorescente edition">
+            3 de la tarde. Fluorescente edition
+          </option>
+          <option value="Grupitors">Grupitors</option>
+        </optgroup>
+      </select>
+
+      <br /><br />
+
+      <label>Accesorios:</label>
+      <select multiple id="accesorios" name="accesorios">
+        <option disabled value="Seleccione uno o más">
+          Seleccione uno o más
+        </option>
+        <option value="ruedines">ruedines</option>
+        <option value="pegatinas">pegatinas</option>
+        <option value="cestita">cestita</option>
+        <option value="cestita">bomba de aire</option>
+        <option value="cestita">timbre</option>
+        <option value="cestita">foco</option>
+      </select>
+
+      <br /><br />
+
+      <label for="marca">¿Qué marca era?</label>
+      
+  <input list="marca" >
+  <datalist id="marca">
+    <option value="specialized">
+    <option value="trek">
+    <option value="merida">
+    <option value="scott">
+    <option value="giant">
+        <option value="cube">
+            <option value="lapierre">
+            <option value="orbea">
+            <option value="cannondale">
+            <option value="bmc">
+                <option value="canyon">
+                    <option value="look">
+                    <option value="protek">
+                    <option value="megamo">
+                    <option value="pinarello">
+                        <option value="bianchi">
+                            <option value="bh">
+                            <option value="factor">
+                            <option value="ghost">
+                            <option value="cervelo">
+                                <option value="argon">
+       
+  </datalist>
+</form>
+
+    
+
+      <br /><br />
+
+      <input type="reset" id="reset" name="reset" /> Restablecer valores
+
+      <br /><br />
+
+      <input type="submit" id="enviar" name="enviar" /> Enviar formulario
+    </form>
+  </body>
+</html>
